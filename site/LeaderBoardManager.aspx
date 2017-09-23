@@ -17,10 +17,10 @@
             <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="Username"></asp:BoundField>
             <asp:BoundField DataField="GitComp" HeaderText="GitComp" SortExpression="GitComp"></asp:BoundField>
             <asp:BoundField DataField="QuickCodeComp" HeaderText="QuickCodeComp" SortExpression="QuickCodeComp"></asp:BoundField>
-            <asp:BoundField DataField="AlgoComp" HeaderText="algorithm" SortExpression="AlgoComp"></asp:BoundField>
-            <asp:BoundField DataField="GitProgress" HeaderText="Git Progress" SortExpression="GitProgress"></asp:BoundField>
-            <asp:BoundField DataField="IssuesProgress" HeaderText="Issues Progress" SortExpression="IssuesProgress"></asp:BoundField>
-            <asp:BoundField DataField="TotalScore" HeaderText="Total Score" SortExpression="TotalScore"></asp:BoundField>
+            <asp:BoundField DataField="AlgoComp" HeaderText="AlgoComp" SortExpression="AlgoComp"></asp:BoundField>
+            <asp:BoundField DataField="GitProgress" HeaderText="GitProgress" SortExpression="GitProgress"></asp:BoundField>
+            <asp:BoundField DataField="IssuesProgress" HeaderText="IssuesProgress" SortExpression="IssuesProgress"></asp:BoundField>
+            <asp:BoundField DataField="TotalScore" HeaderText="TotalScore" SortExpression="TotalScore"></asp:BoundField>
         </Columns>
         <EditRowStyle BackColor="#2461BF"></EditRowStyle>
 
@@ -43,7 +43,7 @@
         <SortedDescendingHeaderStyle BackColor="#4870BE"></SortedDescendingHeaderStyle>
     </asp:GridView>
 
-    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' ProviderName='<%$ ConnectionStrings:ConnectionString.ProviderName %>' SelectCommand="select * from Users
+    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString2 %>' ProviderName='<%$ ConnectionStrings:ConnectionString2.ProviderName %>' SelectCommand="select * from Users
 order by TotalScore desc;"></asp:SqlDataSource>
 </asp:Content>
 
