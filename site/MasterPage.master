@@ -7,7 +7,7 @@
     <title>Co-op Crash Course Sponsored by RBC</title>
     <script src="Scripts/jquery-3.0.0.js"></script>
     <script src="dist/js/foundation.min.js"></script>
-    <link href="site/css/login.css" rel="stylesheet" />
+    <link href="site/css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <asp:ContentPlaceHolder id="head" runat="server">
 

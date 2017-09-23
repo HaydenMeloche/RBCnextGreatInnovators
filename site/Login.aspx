@@ -4,6 +4,7 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+        <link href="site/css/login.css" rel="stylesheet" />
         <h2>Login</h2>
         <asp:Label ID="lblNotifier" runat="server" CssClass="notifier-label"></asp:Label><br />
         <label for="<%= txtUsername.ClientID %>">Username:</label><br />
