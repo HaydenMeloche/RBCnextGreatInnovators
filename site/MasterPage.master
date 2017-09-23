@@ -4,6 +4,8 @@
 
 <html>
 <head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Co-op Crash Course Sponsored by RBC</title>
     <script src="Scripts/jquery-3.2.1.js"></script>
     <script src="dist/js/foundation.js"></script>
@@ -14,9 +16,12 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <h1>Co-op Crash Course</h1>
+    <div class="header-bar">
+        <img src="site/images/rbc-logo-shield.svg" class="logo-img" alt="RBC Logo" />
+        <h1>Co-op Crash Course</h1>
+    </div>
     <form id="form1" runat="server">
-    <div>
+    <div class="content">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>

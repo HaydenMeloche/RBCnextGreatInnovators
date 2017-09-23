@@ -4,8 +4,18 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h1>Welcome <span class="user-field"><%= Session["username"] %></span>!</h1>
-    <textarea>
-        Tutorials
-    </textarea>
+    
+    <h2>Tutorials</h2>
+
+    <h3>Source Control</h3>
+    <ul>
+        <li><a href="Git.aspx">Git</a></li>
+    </ul>
+
+    <h3>Programming Languages</h3>
+    <ul>
+        <li><a href="Javascript.aspx">JavaScript</a></li>
+        <li><a href="Python.aspx">Python</a></li>
+    </ul>
 </asp:Content>
 

@@ -6,6 +6,11 @@
 
 body {
     background-color: #E6E8EB;
+    margin: 0;
+}
+
+.content {
+    margin: 4px;
 }
 
 input {
@@ -21,6 +26,28 @@ input:focus {
     border: 3px solid #51B5E0;
 }
 
+.header-bar {
+    background-color: #0051A5;
+    margin-left: 4px;
+}
+
+.header-bar img {
+    float: left;
+}
+
+.header-bar h1 {
+    position: relative;
+    color: white;
+}
+
+.logo-img {
+    height: 50px
+}
+
+.site-box {
+    background-color: #FEDF01;
+    padding: 20px 40px;
+}
 
 /*Just get 'er done*/
 .user-field {
