@@ -19,6 +19,9 @@ public partial class Competition : System.Web.UI.Page
 {
     private string competitionType;
     private string pathToWorkingFolder = @"C:\Users\Jordan\Documents\RBCnextGreatInnovators\site\";
+    private List<CompetitionQuestion> allQuestions;
+    private int curQuestion = 0;
+    bool writeOverUserInput = false;
 
     private List<CompetitionQuestion> ParseCompetitionTextFile(string filepathToParse)
     {
@@ -49,16 +52,86 @@ public partial class Competition : System.Web.UI.Page
             allQuestions.Add(CurQuestion);
         }
 
-        return null;
+        return allQuestions;
     }
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        List<CompetitionQuestion> allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/Example.txt");
+        allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/Example.txt");
+        
+
+        try
+        {
+            writeOverUserInput = !((bool)Session["QuestionInProgress"]);
+        }
+        catch
+        {
+            writeOverUserInput = true;
+        }
+        
+
+        try
+        {
+            curQuestion = (int)Session["CompetitionQuestionNum"];
+            if (curQuestion >= allQuestions.Count())
+            {
+                curQuestion = 0;
+                Session["CompetitionQuestionNum"] = 0;
+            }
+        }
+        catch
+        {
+            curQuestion = 0;
+            Session["QuestionInProgress"] = true;
+        }
+
+        LoadCurQuestion();
+
+        if (writeOverUserInput)
+        {
+            writeOverUserInput = false;
+            Session["QuestionInProgress"] = true;
+        }
+
+    }
+
+    private void LoadCurQuestion()
+    {
+        Question.Text = allQuestions[curQuestion].Question;
+        Hint.Text = allQuestions[curQuestion].Hint;
+        if (writeOverUserInput) UserInput.Text = allQuestions[curQuestion].StartingText;
+        Output.Text = "Not Run";
     }
 
     protected void SubmitQuestion_Click(object sender, EventArgs e)
     {
+        if (UserInput.Text == allQuestions[curQuestion].ExpectedOutput)
+        {
+            curQuestion++;
+            if (curQuestion >= allQuestions.Count())
+            {
+                finishQuiz();
+            }
+            else
+            {
+                Session["CompetitionQuestionNum"] = curQuestion;
+                Session["QuestionInProgress"] = true;
+                writeOverUserInput = true;
+                LoadCurQuestion();
+            }
+            
+        }
+        else//user was wrong
+        {
+            Output.Text = "Incorrect anwser";
+        }
+    }
+
+    private void finishQuiz()
+    {
+        Console.WriteLine("Quiz Finished");
+        Session["CompetitionQuestionNum"] = 0;
+        Server.Transfer("CompetitionEnd.aspx", false);
 
     }
 }

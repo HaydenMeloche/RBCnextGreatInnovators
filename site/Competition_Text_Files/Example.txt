@@ -21,3 +21,15 @@ Example Hint2
 *
 Expected Output2
 *
+&&&&
+*
+Example Question3
+*
+Compiler3
+*
+Example starting text in the block3
+*
+Example Hint3
+*
+Expected Output3
+*
