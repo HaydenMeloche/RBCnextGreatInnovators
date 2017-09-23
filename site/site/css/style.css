@@ -54,17 +54,23 @@ input:focus {
 
 .box-link, .header-link {
     text-decoration: none;
+    color: white;
+}
+
+.box-link {
+    display: inline-block;
+    width: 0;
+    height: 0;
 }
 
 .link-box {
+    margin: 20px;
     padding: 20px;
     width: 100px;
     text-align: center;
-    border: 1px solid black;
-}
-
-.link-box span {
-    color: #493D63;
+    border: 1px solid #002750;
+    background-color: #006AC3;
+    display: inline-block;
 }
 
 /*Just get 'er done*/
