@@ -1,13 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-        <script src="Scripts/jquery-3.0.0.js"></script>
-        <script src="dist/js/foundation.min.js"></script>
-        <script src="site/js/login-form.js"></script>
-        <link href="site/css/login.css" rel="stylesheet" />
-
+        <h2>Login</h2>
         <asp:Label ID="lblNotifier" runat="server" CssClass="notifier-label"></asp:Label><br />
         <label for="<%= txtUsername.ClientID %>">Username:</label><br />
         <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
@@ -17,5 +14,5 @@
             <button class="unmask" type="button" title="Mask/Unmask Password">Unmask</button>
         </div>
         <asp:Button runat="server" ID="submit" OnClick="SubmitButton_Click" Text="Submit"/>
+        <script src="site/js/login-form.js"></script>
 </asp:Content>
-

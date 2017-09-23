@@ -14,8 +14,8 @@
 
 .password + .unmask {
     position: absolute;
-    right: 12px;
-    top: 50%;
+    /*right: 12px;*/
+    top: 75%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -53,6 +53,20 @@
     border-radius: 50%;
 }
 
-.notifier-label .error {
-    border-color: red;
+.notifier-label.error {
+    border: 1px solid #9B301B;
+    background-color: #F93F26;
+    margin: 20px;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+* {
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
