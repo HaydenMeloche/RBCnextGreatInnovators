@@ -4,13 +4,17 @@
 
 <html>
 <head runat="server">
-    <title>Change Later</title>
-    <h1>Test header</h1>
+    <title>Co-op Crash Course Sponsored by RBC</title>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="dist/js/foundation.min.js"></script>
+    <link href="site/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <asp:ContentPlaceHolder id="head" runat="server">
 
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <h1>Co-op Crash Course</h1>
     <form id="form1" runat="server">
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
