@@ -1,5 +1,8 @@
 ﻿* {
     font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+
+.header-bar h1, .welcome-heading {
     font-weight: 300;
     font-style: normal;
 }
@@ -7,10 +10,6 @@
 body {
     background-color: #E6E8EB;
     margin: 0;
-}
-
-.content {
-    margin: 4px;
 }
 
 input {
@@ -47,6 +46,31 @@ input:focus {
 .site-box {
     background-color: #FEDF01;
     padding: 20px 40px;
+}
+
+.welcome-heading {
+    margin-left: 4px;
+}
+
+.box-link, .header-link {
+    text-decoration: none;
+    color: white;
+}
+
+.box-link {
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+.link-box {
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #002750;
+    background-color: #006AC3;
+    display: inline-block;
 }
 
 /*Just get 'er done*/
