@@ -1,5 +1,8 @@
 ﻿* {
     font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+
+.header-bar h1, .welcome-heading {
     font-weight: 300;
     font-style: normal;
 }
@@ -43,6 +46,25 @@ input:focus {
 .site-box {
     background-color: #FEDF01;
     padding: 20px 40px;
+}
+
+.welcome-heading {
+    margin-left: 4px;
+}
+
+.box-link, .header-link {
+    text-decoration: none;
+}
+
+.link-box {
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.link-box span {
+    color: #493D63;
 }
 
 /*Just get 'er done*/
