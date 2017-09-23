@@ -1,0 +1,23 @@
+*
+Example Question
+*
+Compiler
+*
+Example starting text in the block
+*
+Example Hint
+*
+Expected Output
+*
+&&&&
+*
+Example Question2
+*
+Compiler2
+*
+Example starting text in the block2
+*
+Example Hint2
+*
+Expected Output2
+*

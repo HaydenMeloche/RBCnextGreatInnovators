@@ -3,8 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <textarea>
-        Competitions
-    </textarea>
+    <asp:LinkButton id="SubmitQuestion" 
+           Text="Click Me" 
+           Font-Names="Verdana" 
+           Font-Size="14pt" 
+           OnClick="SubmitQuestion_Click"
+           runat="server"/>
 </asp:Content>
 
