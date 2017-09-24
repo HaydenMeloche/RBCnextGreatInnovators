@@ -14,7 +14,7 @@ body {
     height: 100%;
 }
 
-label, .login-header, .input-box, input[type='submit'], .submit-button {
+label, .login-header, .input-box, .submit-button {
     margin-left: 256px;
     margin-right: 256px;
 }
@@ -99,7 +99,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 768px) {
-    label, .login-header, .input-box, input[type='submit'], .submit-button {
+    label, .login-header, .input-box, .submit-button {
         margin-left: 8px;
         margin-right: 8px;
     }
