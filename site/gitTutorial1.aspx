@@ -59,15 +59,22 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Git Tutorial - Commits</h2>
-    <hr />
-    <h4>Commits</h4>
-    <asp:Panel ID="Panel1" runat="server">Git at its highest level is just a way of keeping track of changes to code. <br />
-Every change consisting of one or more files is called a commit</asp:Panel>
-    <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
-    <!-- use button tag for on page actions -->
-    <br />
-    <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+    <div class="modern_margin">
+        <h2>Git Tutorial - Commits</h2>
+        <hr />
+        <h4>Commits</h4>
+        <asp:Panel ID="Panel1" runat="server">Git at its highest level is just a way of keeping track of changes to code. <br />
+    Every change consisting of one or more files is called a commit.</asp:Panel>
+        <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
+        <!-- use button tag for on page actions -->
+        <br />
+        <br />
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>
 

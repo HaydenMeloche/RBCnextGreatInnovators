@@ -128,7 +128,7 @@ input:focus {
     height: 256px;
 }
 
-.welcome-heading {
+.welcome-heading, .sub-heading, .modern_margin {
     margin: 20px 40px;
 }
 

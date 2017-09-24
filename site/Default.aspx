@@ -40,7 +40,7 @@
     <div class="site-box compete">
         <h2>Compete</h2>
         <p>Got a competitive fire burning in you? Take on the challenge questions, and compete with others
-            as well as with your past personal best in the leaderboards to further reinforce your learning.</p>
+            (and yourself) in the leaderboards to further reinforce your learning.</p>
     </div>
     <div class="site-box onboard">
         <h2>Onboard</h2>

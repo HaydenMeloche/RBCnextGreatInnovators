@@ -3,19 +3,43 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h1>Welcome <span class="user-field"><%= Session["username"] %></span>!</h1>
+    <link href="site/css/navigation.css" rel="stylesheet" />
+
+    <nav class="hover-underline-menu" data-menu-underline-from-center="">
+      <ul class="menu align-center">
+        <li><a href="Tutorials.aspx">Tutorials</a></li>
+        <li><a href="Competition.aspx">Competition</a></li>
+        <li><a href="<%= (Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">Leaderboard</a></li>
+        <li><a href="Logout.aspx">Logout</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="welcome-heading">Tutorials</h1>
     
-    <h2>Tutorials</h2>
+    <h3 class="sub-heading">Source Control</h3>
+    <div class="navi-box">
+        <a href="gitTutorial1.aspx">
+            <div class="skill">
+                <img src="site/images/logos/Git.png" width="64" height="64" /><br />
+                <span>Git</span>
+            </div>
+        </a>
+    </div>
 
-    <h3>Source Control</h3>
-    <ul>
-        <li><a href="gitTutorial1.aspx">Git</a></li>
-    </ul>
-
-    <h3>Programming Languages</h3>
-    <ul>
-        <li><a href="Javascript.aspx">JavaScript</a></li>
-        <li><a href="Python.aspx">Python</a></li>
-    </ul>
+    <h3 class="sub-heading">Programming Languages</h3>
+    <div class="navi-box">
+        <a href="Javascript.aspx">
+            <div class="skill">
+                <img src="site/images/logos/js.png" width="64" height="64" /><br />
+                <span>JavaScript</span>
+            </div>
+        </a>
+        <a href="Python.aspx">
+            <div class="skill">
+                <img src="site/images/logos/Python.png" width="64" height="64" /><br />
+                <span>Python</span>
+            </div>
+        </a>
+    </div>
 </asp:Content>
 
