@@ -18,5 +18,6 @@ public partial class CompetitionStart : System.Web.UI.Page
         Session["QuestionInProgress"] = false;
         Session["CompTimer"] = compTimer;
         Server.Transfer("Competition.aspx", false);
+        //Server.Transfer("CompetitionEnd.aspx", false);
     }
 }

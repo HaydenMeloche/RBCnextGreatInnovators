@@ -1,6 +1,7 @@
 ﻿using ConsoleApp1;
 using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -20,6 +21,8 @@ public class CompetitionQuestion
 
 namespace ConsoleApp1
 {
+   
+
     public static class Compiler
     {
         private static string pathToWorkingFolder = @"C:\Users\Jordan\Documents\RBCnextGreatInnovators\site\";
@@ -154,8 +157,9 @@ public partial class Competition : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/Python.txt");
-        
+        //allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/Example.txt");
+        allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/" + (string)Session["CompetitionFileName"]);
+
 
         try
         {
