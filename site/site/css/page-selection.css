@@ -1,0 +1,27 @@
+﻿.page-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.page-selector .page-item {
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    width: 512px;
+}
+
+.page-item.workplace {
+    background-color: #AABA0A;
+}
+
+.page-item.source {
+    background-color: #87AFBF;
+}
+
+.page-item.prog {
+    background-color: #FCA311;
+}
