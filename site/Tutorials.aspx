@@ -15,7 +15,18 @@
     </nav>
 
     <h1 class="welcome-heading">Tutorials</h1>
-    
+
+    <h3 class="sub-heading">Workplace Culture</h3>
+    <div class="navi-box">
+        <a href="funfacts.aspx">
+            <div class="skill">
+                <asp:Image ID="Image1" Width="64" Height="84" ImageURL="http://www.clker.com/cliparts/8/H/1/R/W/w/business-man-2-hi.png" runat="server" /><br />
+                <span>RBC</span>
+            </div>
+        </a>
+    </div>
+
+
     <h3 class="sub-heading">Source Control</h3>
     <div class="navi-box">
         <a href="gitTutorial1.aspx">
