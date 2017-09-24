@@ -1,0 +1,35 @@
+*
+What is the name of the command that is used for quickly saving your changes but not to a commit?
+*
+None
+*
+
+*
+Starts with an S
+*
+Stash
+*
+&&&&
+*
+What is the name of the main branch which everything is spawned from?
+*
+none
+*
+
+*
+
+*
+Master
+*
+&&&&
+*
+What command should be called before starting work on a feature or bug
+*
+none
+*
+
+*
+This is used to keep master stable
+*
+branch
+*

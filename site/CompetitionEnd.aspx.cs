@@ -130,11 +130,13 @@ public partial class CompetitionEnd : System.Web.UI.Page
 
             FunctionAdder.UpdateScore(scoreReduced, "bobTheBoy", currentComp);
 
+            ScoreOutput.Text = "Congrats! You scored: " + scoreReduced;
+
             //code here to post to leaderboard
         }
         catch
         {
-            //code here to post to leaderboard
+            ScoreOutput.Text = "Congrats! You scored: " + 50;
         }
     }
 }

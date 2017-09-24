@@ -221,7 +221,7 @@ public partial class Competition : System.Web.UI.Page
 
         }
 
-        if (userAnwser.Trim('\n').Trim('\r') == allQuestions[curQuestion].ExpectedOutput)
+        if (userAnwser.Trim('\n').Trim('\r').ToLower() == allQuestions[curQuestion].ExpectedOutput.ToLower())
         {
             curQuestion++;
             if (curQuestion >= allQuestions.Count())
