@@ -9,7 +9,7 @@
 
     <h3>Source Control</h3>
     <ul>
-        <li><a href="Git.aspx">Git</a></li>
+        <li><a href="gitTutorial1.aspx">Git</a></li>
     </ul>
 
     <h3>Programming Languages</h3>

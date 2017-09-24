@@ -12,13 +12,12 @@ public partial class gitTutorials_gitTutorial1 : System.Web.UI.Page
     {
 
     }
-
-    protected void Button1_Click(object sender, EventArgs e)
+    protected void Button2_Click(object sender, EventArgs e)
     {
         //string username = Session["username"].ToString();
         string username = "bestMad";
-        UpdateScore(1,username,Competition.gitProgress);
-        Response.Redirect("~/gitTutorial2.aspx");
+        UpdateScore(4, username, Competition.gitProgress);
+        Response.Redirect("~/Tutorials.aspx");
     }
     public enum Competition { gitComp, quickCode, algorithm, totalScore, gitProgress, issuesProgress };
 

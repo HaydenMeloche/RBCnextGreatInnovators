@@ -73,6 +73,6 @@ So this raises the question how does a team of developers work on a branch while
     <br />
     <asp:Image ID="Image2" runat="server" Height="150" ImageUrl="https://www.visualstudio.com/en-us/docs/integrate/api/git/_img/ahead-behind.png" />
     <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" runat="server" Width="50" Height="10" Text="Next" />
+    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button4_Click" runat="server" Width="50" Height="10" Text="Next" />
 </asp:Content>
 

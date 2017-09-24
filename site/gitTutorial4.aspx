@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="gitTutorial1.aspx.cs" Inherits="gitTutorials_gitTutorial1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="gitTutorial4.aspx.cs" Inherits="gitTutorials_gitTutorial1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
@@ -59,15 +59,22 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Git Tutorial - Commits</h2>
+    <h2>Git Tutorial - Workflow</h2>
     <hr />
-    <h4>Commits</h4>
-    <asp:Panel ID="Panel1" runat="server">Git at its highest level is just a way of keeping track of changes to code. <br />
-Every change consisting of one or more files is called a commit</asp:Panel>
-    <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
+    <asp:Panel ID="Panel1" runat="server">Here is the typical git workflow: <br />
+        <ul>
+            <li>Product branch is master</li>
+            <li>Then developers branch off of master to address an issue or implement a feature</li>
+            <li>Once this is done the developer sends a pull request to at least one other developer to review the code</li>
+            <li>The reviewer gives some feedback and the developer might have to make another commit addressing this feedback</li>
+            <li>Finally after all the feedback has been addressed the pull request is approved and the development branch gets brought into master</li>
+        </ul>
+
+</asp:Panel>
+    <asp:Image ID="Image1" runat="server" ImageUrl="https://image.slidesharecdn.com/gitworkflows-141024070042-conversion-gate01/95/git-workflows-12-638.jpg?cb=1414134303" Height="250" />
     <!-- use button tag for on page actions -->
     <br />
     <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button2_Click" runat="server" Width="50" Height="10" Text="Next" />
 </asp:Content>
 

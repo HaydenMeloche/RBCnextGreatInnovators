@@ -71,6 +71,6 @@ If added security wants to be put in place, it can be made that at least one per
     <!-- use button tag for on page actions -->
     <br />
     <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" runat="server" Width="50" Height="10" Text="Next" />
+    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button3_Click" runat="server" Width="50" Height="10" Text="Next" />
 </asp:Content>
 
