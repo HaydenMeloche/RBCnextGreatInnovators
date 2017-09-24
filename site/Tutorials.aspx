@@ -34,7 +34,7 @@
                 <span>JavaScript</span>
             </div>
         </a>
-        <a href="">
+        <a>
             <div class="skill">
                 <img src="site/images/logos/Python - Grey.png" width="64" height="64" /><br />
                 <span>Python</span>
