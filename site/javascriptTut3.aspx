@@ -66,29 +66,36 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Learn Javascript - Comments</h2>
-    <hr />
-    <asp:Panel ID="Panel1" runat="server">
-        <h4>Python</h4>
-        Python allows single line comments and only single line comments.
-        ex.
-        <pre>
-            <code>
-                # comment goes here
-            </code>
-        </pre>
-        <h4>JavaScript</h4>
-        Javascript supports both single line and multiline comments.
-        ex.
-        <pre>
-            <code>
-                // comment goes here
-                /* comments 
-                go 
-                here*/
-            </code>
-        </pre>
-</asp:Panel>
-    <!-- use button tag for on page actions -->
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+    <div class="modern_margin">
+        <h2>Learn Javascript - Comments</h2>
+        <hr />
+        <asp:Panel ID="Panel1" runat="server">
+            <h4>Python</h4>
+            Python allows single line comments and only single line comments.
+            ex.
+            <pre>
+                <code>
+                    # comment goes here
+                </code>
+            </pre>
+            <h4>JavaScript</h4>
+            JavaScript supports both single line and multiline comments.
+            ex.
+            <pre>
+                <code>
+                    // comment goes here
+                    /* comments 
+                    go 
+                    here*/
+                </code>
+            </pre>
+    </asp:Panel>
+        <!-- use button tag for on page actions -->
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>

@@ -64,52 +64,59 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Learn Javascript - String Manipulation</h2>
-    <hr />
-    <h3>String Length</h3>
-    <h4>Python</h4>
-    ex.
-    <pre>
-        <code>
-            len(string)
-            #returns int of length
-        </code>
-    </pre>
-    <h4>JavaScript</h4>
-    ex.
-    <pre>
-        <code>
-            string.length
-            #returns int of length
-        </code>
-    </pre>
-    <h3>String Slice</h3>
-    <h4>Python</h4>
-    ex.
-    <pre>
-        <code>
-            string[7:16]
-            #will return a string with characters 7 through 16
-        </code>
-    </pre>
+    <div class="modern_margin">
+        <h2>Learn Javascript - String Manipulation</h2>
+        <hr />
+        <h3>String Length</h3>
+        <h4>Python</h4>
+        ex.
+        <pre>
+            <code>
+                len(string)
+                #returns int of length
+            </code>
+        </pre>
+        <h4>JavaScript</h4>
+        ex.
+        <pre>
+            <code>
+                string.length
+                #returns int of length
+            </code>
+        </pre>
+        <h3>String Slice</h3>
+        <h4>Python</h4>
+        ex.
+        <pre>
+            <code>
+                string[7:16]
+                #will return a string with characters 7 through 16
+            </code>
+        </pre>
  
-    <h4>JavaScript</h4>
-    ex.
-    <pre>
-        <code>
-            string.slice(7,16);
-            //will return a string with characters 7 through 16
-        </code>
-    </pre>
-    <h3>Splitting an Array</h3>
-    <h4>Python and Javascript</h4>
-    ex.
-    <pre>
-        <code>
-            string.split(".")
-            #will split it into an array with the elements being the strings between '.' characters
-        </code>
-    </pre>
-    <!-- use button tag for on page actions -->
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+        <h4>JavaScript</h4>
+        ex.
+        <pre>
+            <code>
+                string.slice(7,16);
+                //will return a string with characters 7 through 16
+            </code>
+        </pre>
+        <h3>Splitting an Array</h3>
+        <h4>Python and Javascript</h4>
+        ex.
+        <pre>
+            <code>
+                string.split(".")
+                #will split it into an array with the elements being the strings between '.' characters
+            </code>
+        </pre>
+        <!-- use button tag for on page actions -->
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>

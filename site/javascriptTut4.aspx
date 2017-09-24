@@ -66,44 +66,51 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Learn Javascript - Functions</h2>
-    <hr />
-    <asp:Panel ID="Panel1" runat="server">
-        <h4>Python</h4> Functions in Python are declared like so.
-    ex.
+    <div class="modern_margin">
+        <h2>Learn Javascript - Functions</h2>
+        <hr />
+        <asp:Panel ID="Panel1" runat="server">
+            <h4>Python</h4> Functions in Python are declared like so.
+        ex.
+                <pre>
+                    <code>
+                        def functionName(functionArg):
+	                        return "hello " + functionArg
+                    </code>
+                </pre>
+            <h4>JavaScript</h4>
+         While functions in JavaScript are declared like this.
+        ex.
             <pre>
                 <code>
-                    def functionName(functionArg):
-	                    return "hello " + functionArg
+                    function (functionArg) {
+                        return "hello " + functionArg ;
+                    };
                 </code>
             </pre>
-        <h4>JavaScript</h4>
-     While functions in JavaScript are declared like this.
-    ex.
-        <pre>
-            <code>
-                function (functionArg) {
-                    return "hello " + functionArg ;
-                };
-            </code>
-        </pre>
-    <h3>Main function</h3>
-     <h4>Python</h4>   
-        Includes the main to indicate which function to run first.
-    ex. 
-        <pre>
-            <code>
-             def main():
-	            #code goes here
+        <h3>Main function</h3>
+         <h4>Python</h4>   
+            Includes the main to indicate which function to run first.
+        ex. 
+            <pre>
+                <code>
+                 def main():
+	                #code goes here
 
-             if __name__ == '__main__':
-	                main()
-            </code>
-        </pre>
-        <h4>JavaScript</h4>
-        Javascript does not have a main function and runs starting from first level of scope.</asp:Panel>
-    <!-- use button tag for on page actions -->
-    <br />
-    <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+                 if __name__ == '__main__':
+	                    main()
+                </code>
+            </pre>
+            <h4>JavaScript</h4>
+            Javascript does not have a main function and runs starting from first level of scope.</asp:Panel>
+        <!-- use button tag for on page actions -->
+        <br />
+        <br />
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>

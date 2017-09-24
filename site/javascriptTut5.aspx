@@ -64,71 +64,78 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Learn Javascript - Loops</h2>
-    <hr />
-    <h3>While Loops</h3>
-    <h4>Python</h4>
-    While loops in Python are declared like so:
-    ex.
-    <pre>
-        <code>
-            while (condition):
-	            #repeated stuff goes here
-        </code>
-    </pre>
-    <h4>JavaScript</h4>
-    In JavaScript the condition is setup almost the same except the braces '{' and '}' denote where the code should loop
-    ex.
-    <pre>
-        <code>
-            while(condition){
-	            #repeated stuff goes here
-            }
-        </code>
-    </pre>
-    <h3>Do While Loops</h3>
-    <h4>Python</h4>
-    These types of loops do not exist in python but can be easily mimicked by a simple while and break statement at the end.
-    ex.
-    <pre>
-        <code>
-            while(1):
-	            if(!condition):
-		            break;
-        </code>
-    </pre>
+    <div class="modern_margin">
+        <h2>Learn Javascript - Loops</h2>
+        <hr />
+        <h3>While Loops</h3>
+        <h4>Python</h4>
+        While loops in Python are declared like so:
+        ex.
+        <pre>
+            <code>
+                while (condition):
+	                #repeated stuff goes here
+            </code>
+        </pre>
+        <h4>JavaScript</h4>
+        In JavaScript the condition is setup almost the same except the braces '{' and '}' denote where the code should loop
+        ex.
+        <pre>
+            <code>
+                while(condition){
+	                #repeated stuff goes here
+                }
+            </code>
+        </pre>
+        <h3>Do While Loops</h3>
+        <h4>Python</h4>
+        These types of loops do not exist in python but can be easily mimicked by a simple while and break statement at the end.
+        ex.
+        <pre>
+            <code>
+                while(1):
+	                if(!condition):
+		                break;
+            </code>
+        </pre>
  
-    <h4>JavaScript</h4>
-    ex.
-    <pre>
-        <code>
-            do{
+        <h4>JavaScript</h4>
+        ex.
+        <pre>
+            <code>
+                do{
 
-                }while(condition);
-        </code>
-    </pre>
+                    }while(condition);
+            </code>
+        </pre>
 
-    <h3>For Loops</h3>
-    <h4>Python</h4>
-    Python loops will take an array and iterate through that array:
-    ex.
-    <pre>
-        <code>
-            for string in stringArray:
-	            #execute operations on single string here
-        </code>
-    </pre>
-    <h4>JavaScript</h4>
-    Unlike Python, Javascript loops using a counting system.
-    ex.
-    <pre>
-        <code>
-            for(starting variable; conditional; increment){
-	            string = array[variable];
-            }
-        </code>
-    </pre>
+        <h3>For Loops</h3>
+        <h4>Python</h4>
+        Python loops will take an array and iterate through that array:
+        ex.
+        <pre>
+            <code>
+                for string in stringArray:
+	                #execute operations on single string here
+            </code>
+        </pre>
+        <h4>JavaScript</h4>
+        Unlike Python, Javascript loops using a counting system.
+        ex.
+        <pre>
+            <code>
+                for(starting variable; conditional; increment){
+	                string = array[variable];
+                }
+            </code>
+        </pre>
 
-    <!-- use button tag for on page actions -->
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+        <!-- use button tag for on page actions -->
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>

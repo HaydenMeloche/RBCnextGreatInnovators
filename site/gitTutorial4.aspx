@@ -59,22 +59,29 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Git Tutorial - Workflow</h2>
-    <hr />
-    <asp:Panel ID="Panel1" runat="server">Here is the typical git workflow: <br />
-        <ul>
-            <li>Product branch is master</li>
-            <li>Then developers branch off of master to address an issue or implement a feature</li>
-            <li>Once this is done the developer sends a pull request to at least one other developer to review the code</li>
-            <li>The reviewer gives some feedback and the developer might have to make another commit addressing this feedback</li>
-            <li>Finally after all the feedback has been addressed the pull request is approved and the development branch gets brought into master</li>
-        </ul>
+    <div class="modern_margin">
+        <h2>Git Tutorial - Workflow</h2>
+        <hr />
+        <asp:Panel ID="Panel1" runat="server">Here is the typical git workflow: <br />
+            <ul>
+                <li>Product branch is master</li>
+                <li>Then developers branch off of master to address an issue or implement a feature</li>
+                <li>Once this is done the developer sends a pull request to at least one other developer to review the code</li>
+                <li>The reviewer gives some feedback and the developer might have to make another commit addressing this feedback</li>
+                <li>Finally after all the feedback has been addressed the pull request is approved and the development branch gets brought into master</li>
+            </ul>
 
-</asp:Panel>
-    <asp:Image ID="Image1" runat="server" ImageUrl="https://image.slidesharecdn.com/gitworkflows-141024070042-conversion-gate01/95/git-workflows-12-638.jpg?cb=1414134303" Height="250" />
-    <!-- use button tag for on page actions -->
-    <br />
-    <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button2_Click" runat="server" Width="50" Height="10" Text="Next" />
+    </asp:Panel>
+        <asp:Image ID="Image1" runat="server" ImageUrl="https://image.slidesharecdn.com/gitworkflows-141024070042-conversion-gate01/95/git-workflows-12-638.jpg?cb=1414134303" Height="250" />
+        <!-- use button tag for on page actions -->
+        <br />
+        <br />
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button2_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>
 
