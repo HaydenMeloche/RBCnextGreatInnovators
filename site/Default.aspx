@@ -65,15 +65,35 @@
         
     </div>
     <% } else { %>
-    <h1>Welcome <span class="user-field"><%= Session["username"] %></span>!</h1>
-    <nav class="hover-underline-menu" data-menu-underline-from-center="">
-      <ul class="menu align-center">
-        <li><a href="Tutorials.aspx">Tutorials</a></li>
-        <li><a href="CompetitionList.aspx">Competition</a></li>
-        <li><a href="<%= (Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">Leaderboard</a></li>
-        <li><a href="Logout.aspx">Logout</a></li>
-      </ul>
-    </nav>
+    <link href="foundation-icons/foundation-icons.css" rel="stylesheet" />
+    <link href="site/css/dashboard.css" rel="stylesheet" />
+    <h2 class="welcome-heading">Welcome <span class="user-field"><%= Session["username"] %></span>!</h2>
+    <div class="welcome-menu">
+        <a href="Tutorials.aspx">
+            <div class="menu-item">
+                <i class="fi-book icon-style"></i>
+                Tutorials
+            </div>
+        </a>
+        <a href="CompetitionList.aspx">
+            <div class="menu-item">
+                <i class="fi-pencil icon-style"></i>
+                Competition
+            </div>
+        </a>
+        <a href="<%= (Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">
+            <div class="menu-item">
+                <i class="fi-trophy icon-style"></i>
+                Leaderboard
+            </div>
+        </a>
+        <a href="Logout.aspx">
+            <div class="menu-item">
+                <i class="fi-x-circle icon-style"></i>
+                Logout
+            </div>
+        </a>
+    </div>
     <% } %>
 </asp:Content>
 

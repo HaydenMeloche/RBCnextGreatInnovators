@@ -16,6 +16,11 @@
             <asp:TextBox ID="txtPassword" runat="server" cssClass="password" type="password" Visible="True"></asp:TextBox>
             <button class="unmask" type="button" title="Mask/Unmask Password">Unmask</button>
         </div>
-        <asp:Button runat="server" ID="submit" OnClick="SubmitButton_Click" Text="Submit"/>
+        <asp:Button runat="server" ID="submit" OnClick="SubmitButton_Click" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= submit.ClientID %>').click()" class="box-link submit-button">
+            <div class="link-box">
+                <b>Submit</b>
+            </div>
+        </a>
         <script src="site/js/login-form.js"></script>
 </asp:Content>
