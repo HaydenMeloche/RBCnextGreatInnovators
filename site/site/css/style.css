@@ -46,6 +46,7 @@ input:focus {
     bottom: 0;
     float: left;
     margin: 20px;
+    top: 1px;
 }
 
 .header-bar h1 {
@@ -128,7 +129,7 @@ input:focus {
 }
 
 .welcome-heading {
-    margin: 20px;
+    margin: 20px 40px;
 }
 
 .box-link, .header-link {
@@ -150,13 +151,37 @@ input:focus {
     background-color: #006AC3;
 }
 
+.link-box:hover {
+    background-color: #FFFFFF;
+}
+
 /*Just get 'er done*/
 .user-field {
     text-transform: capitalize;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 350px) {
+    .site-box.hero {
+        background-position: right -20px top 0;
+        height: 256px;
+    }
+}
+
+@media (max-width: 376px) {
+    .site-box.hero {
+        background-position: right -20px top 0;
+        height: 384px;
+    }
+}
+
+@media (max-width: 415px) {
     .site-box.skills .skill {
-        margin: 10px;
+        margin: 9px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-bar {
+
     }
 }
