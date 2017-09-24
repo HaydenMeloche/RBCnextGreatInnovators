@@ -29,7 +29,7 @@ public partial class Login : System.Web.UI.Page
                 Session["usertype"] = "manager";
             }
             //Redirect to the landing page after they log in
-            Response.Redirect("~/Tutorials.aspx");
+            Response.Redirect("~/Default.aspx");
         } else {
             //Notify user that authentication failed...
             lblNotifier.Text = "Invalid username/password combo";
