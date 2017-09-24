@@ -14,9 +14,13 @@ body {
     height: 100%;
 }
 
-label, .login-header, .input-box, input[type='submit'] {
+label, .login-header, .input-box, input[type='submit'], .submit-button {
     margin-left: 256px;
     margin-right: 256px;
+}
+
+.login-header {
+    padding-top: 80px;
 }
 
 .input-box input {
@@ -95,8 +99,11 @@ input[type='submit'] {
 }
 
 @media (max-width: 768px) {
-    label, .login-header, .input-box, input[type='submit'] {
+    label, .login-header, .input-box, input[type='submit'], .submit-button {
         margin-left: 8px;
         margin-right: 8px;
+    }
+    .login-header {
+        padding-top: 20px;
     }
 }
