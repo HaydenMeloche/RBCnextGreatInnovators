@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp1;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,6 +15,102 @@ public class CompetitionQuestion
     public string Hint;
     public string ExpectedOutput;
 }
+
+
+
+namespace ConsoleApp1
+{
+    public static class Compiler
+    {
+        private static string pathToWorkingFolder = @"C:\Users\Jordan\Documents\RBCnextGreatInnovators\site\";
+
+        public static string Compile(string code, bool isJavscript, out double CompileTime)
+        {
+            string fileName = (isJavscript) ? "script.js" : "script.py";
+            fileName = pathToWorkingFolder + fileName;
+            ///Create script file
+            try
+            {
+                // Check if file already exists. If yes, delete it. 
+                if (File.Exists(fileName))
+                {
+                    File.Delete(fileName);
+                }
+
+                
+
+                // Create a new file 
+                
+                using (StreamWriter sw = File.CreateText(fileName))
+                {
+                    if (isJavscript)
+                    {
+                        //sw.WriteLine("console.time('time');");
+                        sw.WriteLine(code);
+                        //sw.WriteLine("console.timeEnd('time');");
+                    }
+                    else
+                    {
+                        //sw.WriteLine("import time");
+                        //sw.WriteLine("t0 = time.time()");
+                        sw.WriteLine(code);
+                        //sw.WriteLine("t1 = time.time()");
+                        //sw.WriteLine("print(t1-t0)");
+                    }
+
+                }
+
+                var debugTest = File.ReadAllText(fileName);
+
+
+                //// Write file contents on console. 
+                //using (StreamReader sr = File.OpenText(fileName))
+                //{
+                //    string s = "";
+                //    while ((s = sr.ReadLine()) != null)
+                //    {
+                //        Console.WriteLine(s);
+                //    }
+                //}
+            }
+            catch (Exception Ex)
+            {
+                Console.WriteLine(Ex.ToString());
+            }
+
+            //Run script
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            string cmd = fileName;
+            if (isJavscript)
+            {
+                proc.StartInfo.FileName = @"C:\Program Files\nodejs\node.exe";
+            }
+            else
+            {
+                proc.StartInfo.FileName = @"C:\Python34\python.exe";
+            }
+
+            proc.StartInfo.Arguments = cmd;
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.Start();
+
+            var allOutput = proc.StandardOutput.ReadToEnd();
+
+            try
+            {
+                CompileTime = 0;
+                return allOutput;
+            }
+            catch
+            {
+                CompileTime = 1000000;
+                return allOutput;
+            }
+        }
+    }
+}
+
 
 public partial class Competition : System.Web.UI.Page
 {
@@ -57,7 +154,7 @@ public partial class Competition : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/Example.txt");
+        allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/questions.txt");
         
 
         try
@@ -105,7 +202,22 @@ public partial class Competition : System.Web.UI.Page
 
     protected void SubmitQuestion_Click(object sender, EventArgs e)
     {
-        if (UserInput.Text == allQuestions[curQuestion].ExpectedOutput)
+        var userAnwser = UserInput.Text;
+        double compileTime;
+
+        switch (allQuestions[curQuestion].Compiler.Trim(' ').ToLower())
+        {
+            case "java":
+                userAnwser = Compiler.Compile(userAnwser, true, out compileTime);
+                break;
+
+            case "python":
+                userAnwser = Compiler.Compile(userAnwser, false, out compileTime);
+                break;
+
+        }
+
+        if (userAnwser.Trim('\n').Trim('\r') == allQuestions[curQuestion].ExpectedOutput)
         {
             curQuestion++;
             if (curQuestion >= allQuestions.Count())

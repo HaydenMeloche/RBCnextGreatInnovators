@@ -5,6 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
     <asp:TextBox ID="Question"
+        TextMode="MultiLine" Rows="10"
         ReadOnly="true"
         Font-Names="Verdana" 
            Font-Size="14pt"
@@ -23,6 +24,7 @@
     <br />
 
     <asp:TextBox ID="UserInput"
+        TextMode="MultiLine" Rows="10"
         Font-Names="Verdana" 
            Font-Size="14pt" 
            runat="server"

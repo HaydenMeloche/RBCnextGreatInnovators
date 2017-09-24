@@ -3,6 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <textarea>Congrats you finished!</textarea>
+    <asp:TextBox ID="TestOutput"
+        ReadOnly="true"
+        Font-Names="Verdana" 
+           Font-Size="14pt"
+           Width="500"
+           runat="server"/>
 </asp:Content>
 
