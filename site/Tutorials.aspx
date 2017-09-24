@@ -9,7 +9,7 @@
       <ul class="menu align-center">
         <li><a href="Tutorials.aspx">Tutorials</a></li>
         <li><a href="Competition.aspx">Competition</a></li>
-        <li><a href="<%= (Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">Leaderboard</a></li>
+        <li><a href="<%= (Session["usertype"] != null && Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">Leaderboard</a></li>
         <li><a href="Logout.aspx">Logout</a></li>
       </ul>
     </nav>
@@ -28,7 +28,7 @@
 
     <h3 class="sub-heading">Programming Languages</h3>
     <div class="navi-box">
-        <a href="Javascript.aspx">
+        <a href="javascriptTut1.aspx">
             <div class="skill">
                 <img src="site/images/logos/js.png" width="64" height="64" /><br />
                 <span>JavaScript</span>

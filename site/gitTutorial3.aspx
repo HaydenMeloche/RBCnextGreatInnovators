@@ -59,18 +59,25 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Git Tutorial - Commits</h2>
-    <hr />
-    <h4>Commits</h4>
-    <asp:Panel ID="Panel1" runat="server">But how does merging between branches work?
-Well git has a very smart algorithm for processing changes and can figure out a great deal. But if changes conflict with another then a manual resolution has to be done. There are many IDEs which help with resolving ‘merge conflicts’ easier. <br />
-        Once the all the conflicts have been resolved, the branch now be merged back.
-If added security wants to be put in place, it can be made that at least one person has to approve a merge before it happens. This is a good practice because it is an additional step of stopping bugs and also keeps another team member up to date with that code
-</asp:Panel>
-    <asp:Image ID="Image1" runat="server" ImageUrl="https://i.stack.imgur.com/2aJV1.png" Height="250" />
-    <!-- use button tag for on page actions -->
-    <br />
-    <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button3_Click" runat="server" Width="50" Height="10" Text="Next" />
+    <div class="modern_margin">
+        <h2>Git Tutorial - Commits</h2>
+        <hr />
+        <h4>Commits</h4>
+        <asp:Panel ID="Panel1" runat="server">But how does merging between branches work?
+    Well git has a very smart algorithm for processing changes and can figure out a great deal. But if changes conflict with another then a manual resolution has to be done. There are many IDEs which help with resolving ‘merge conflicts’ easier. <br />
+            Once the all the conflicts have been resolved, the branch now be merged back.
+    If added security wants to be put in place, it can be made that at least one person has to approve a merge before it happens. This is a good practice because it is an additional step of stopping bugs and also keeps another team member up to date with that code
+    </asp:Panel>
+        <asp:Image ID="Image1" runat="server" ImageUrl="https://i.stack.imgur.com/2aJV1.png" Height="250" />
+        <!-- use button tag for on page actions -->
+        <br />
+        <br />
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button3_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>
 

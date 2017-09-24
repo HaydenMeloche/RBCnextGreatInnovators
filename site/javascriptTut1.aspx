@@ -64,26 +64,33 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Learn Javascript - Style</h2>
-    <hr />
+    <div class="modern_margin">
+        <h2>Learn Javascript - Style</h2>
+        <hr />
  
-    <asp:Panel ID="Panel1" runat="server"><h4>Style of execution:</h4>
-Both languages are interpretted at run time and behave almost the same
-        <br />
- <h4>Difference in scope</h4> 
-Python: The Scope is restricted between elements of the same spacing
-ex. </asp:Panel>
+        <asp:Panel ID="Panel1" runat="server"><h4>Style of execution:</h4>
+    Both languages are interpretted at run time and behave almost the same
+            <br />
+     <h4>Difference in scope</h4> 
+    Python: The Scope is restricted between elements of the same spacing
+    ex. </asp:Panel>
 
-    <pre>
-  <code>
-    JavaScript: The scope in JavaScript is restricted between '{' and '}'.
-    ex.
-    if(conditional){
-	    //this is in the scope of the if statement
-    }
-    //this is not in the scope of the if statement
-  </code>
-</pre>
-    <!-- use button tag for on page actions -->
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+        <pre>
+      <code>
+        JavaScript: The scope in JavaScript is restricted between '{' and '}'.
+        ex.
+        if(conditional){
+	        //this is in the scope of the if statement
+        }
+        //this is not in the scope of the if statement
+      </code>
+    </pre>
+        <!-- use button tag for on page actions -->
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>

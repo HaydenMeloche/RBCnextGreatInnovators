@@ -59,20 +59,27 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Git Tutorial - Branches</h2>
-    <hr />
-    <h4>Commits</h4>
-    <asp:Panel ID="Panel1" runat="server">A branch at its simplest level is a series of commits</asp:Panel>
-    <asp:Image ID="Image1" runat="server" Height="250" ImageUrl="~/images/Git Branch off example.png" />
-    <!-- use button tag for on page actions -->
-    <br />
-    <asp:Panel ID="Panel2" runat="server">A branch is normally associated with a product
-So this raises the question how does a team of developers work on a branch while not getting in each other’s way? <br />
-        The answer is simple, everyone creates their own branch for working on a feature and then when that feature is complete their branch is merged back into the main branch.
-</asp:Panel>
-    <br />
-    <asp:Image ID="Image2" runat="server" Height="150" ImageUrl="https://www.visualstudio.com/en-us/docs/integrate/api/git/_img/ahead-behind.png" />
-    <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button4_Click" runat="server" Width="50" Height="10" Text="Next" />
+    <div class="modern_margin">
+        <h2>Git Tutorial - Branches</h2>
+        <hr />
+        <h4>Commits</h4>
+        <asp:Panel ID="Panel1" runat="server">A branch at its simplest level is a series of commits</asp:Panel>
+        <asp:Image ID="Image1" runat="server" Height="250" ImageUrl="~/images/Git Branch off example.png" />
+        <!-- use button tag for on page actions -->
+        <br />
+        <asp:Panel ID="Panel2" runat="server">A branch is normally associated with a product
+    So this raises the question how does a team of developers work on a branch while not getting in each other’s way? <br />
+            The answer is simple, everyone creates their own branch for working on a feature and then when that feature is complete their branch is merged back into the main branch.
+    </asp:Panel>
+        <br />
+        <asp:Image ID="Image2" runat="server" Height="150" ImageUrl="https://www.visualstudio.com/en-us/docs/integrate/api/git/_img/ahead-behind.png" />
+        <br />
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button4_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>
 

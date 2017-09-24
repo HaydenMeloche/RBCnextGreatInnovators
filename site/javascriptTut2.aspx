@@ -63,24 +63,31 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Learn Javascript - Statements</h2>
-    <hr />
-    <asp:Panel ID="Panel1" runat="server">
-<h4>Python:</h4> Statements in Python are generally finished with a new line. <br />
-ex.
-        <pre>
-            <code>
-                x = y + 1
-            </code>
-        </pre>
-<h4>Javascript:</h4> The statement is finished with a single ';' <br />
-ex.
-        <pre>
-            <code>
-                x = y + 1;
-            </code>
-        </pre>
-    </asp:Panel>
-    <!-- use button tag for on page actions -->
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+    <div class="modern_margin">
+        <h2>Learn Javascript - Statements</h2>
+        <hr />
+        <asp:Panel ID="Panel1" runat="server">
+    <h4>Python:</h4> Statements in Python are generally finished with a new line. <br />
+    ex.
+            <pre>
+                <code>
+                    x = y + 1
+                </code>
+            </pre>
+    <h4>JavaScript:</h4> The statement is finished with a single ';'. <br />
+    ex.
+            <pre>
+                <code>
+                    x = y + 1;
+                </code>
+            </pre>
+        </asp:Panel>
+        <!-- use button tag for on page actions -->
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>

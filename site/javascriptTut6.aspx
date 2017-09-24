@@ -64,60 +64,67 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Learn Javascript - Data Types & Classes</h2>
-    <hr />
-    <h3>Variables</h3>
-    <h4>Python</h4>
-    Both javaScript and Python have dynamically typed variables with one minor difference.
-    ex.
-    <pre>
-        <code>
-            variableName = "value"
-        </code>
-    </pre>
-    <h4>JavaScript</h4>
-    Javascript differs from python in that you have to declare it as a variable.
-    ex.
-    <pre>
-        <code>
-            var variableName = "value";
-        </code>
-    </pre>
-    <h3>Classes</h3>
-    <h4>Python</h4>
-    ex.
-    <pre>
-        <code>
-            class className(object):
-	            """docstring for className"""
-	            def __init__(self, arg):
-		            super(className, self).__init__()
-		            self.arg = arg
+    <div class="modern_margin">
+        <h2>Learn Javascript - Data Types & Classes</h2>
+        <hr />
+        <h3>Variables</h3>
+        <h4>Python</h4>
+        Both javaScript and Python have dynamically typed variables with one minor difference.
+        ex.
+        <pre>
+            <code>
+                variableName = "value"
+            </code>
+        </pre>
+        <h4>JavaScript</h4>
+        Javascript differs from python in that you have to declare it as a variable.
+        ex.
+        <pre>
+            <code>
+                var variableName = "value";
+            </code>
+        </pre>
+        <h3>Classes</h3>
+        <h4>Python</h4>
+        ex.
+        <pre>
+            <code>
+                class className(object):
+	                """docstring for className"""
+	                def __init__(self, arg):
+		                super(className, self).__init__()
+		                self.arg = arg
 		
-	            def functionName(self, functionArg):
-		            return self.arg + functionArg
+	                def functionName(self, functionArg):
+		                return self.arg + functionArg
 
-variable = ClassName("hello ")
-variable.functionName("world")
-        </code>
-    </pre>
+    variable = ClassName("hello ")
+    variable.functionName("world")
+            </code>
+        </pre>
  
-    <h4>JavaScript</h4>
-    ex.
-    <pre>
-        <code>
-            function ClassName(arg = "unknown unknown") {
-                var this.variableName = arg;
-                this.functionName = function (functionArg) {
-                     return this.variableName + functionArg ;
-                };
-            }
+        <h4>JavaScript</h4>
+        ex.
+        <pre>
+            <code>
+                function ClassName(arg = "unknown unknown") {
+                    var this.variableName = arg;
+                    this.functionName = function (functionArg) {
+                         return this.variableName + functionArg ;
+                    };
+                }
 
-var variable = new ClassName("hello");
-variable.functionName(" world");
-        </code>
-    </pre>
+    var variable = new ClassName("hello");
+    variable.functionName(" world");
+            </code>
+        </pre>
 
-    <!-- use button tag for on page actions -->
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+        <!-- use button tag for on page actions -->
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>
