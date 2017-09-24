@@ -70,9 +70,13 @@
         This allows a manager to observe the total remaining time on bugs and tasks within a product.<br />
 4.	Each developer can see all tasks assigned to them, and they can tell the priority by the field. <br />
 </asp:Panel>
-    <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
     <!-- use button tag for on page actions -->
     <br />
     <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
 </asp:Content>

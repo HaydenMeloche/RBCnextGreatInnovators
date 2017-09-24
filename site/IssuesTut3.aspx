@@ -61,7 +61,7 @@
     <h2>Project Tracking - Misc benifits<h2>
     <hr />
     <h4>Misc benifits</h4>
-    <asp:Panel ID="Panel1" runat="server">3This provides a clean way of developers, and test teams creating ‘Change Requests’.<br />
+    <asp:Panel ID="Panel1" runat="server">This provides a clean way of developers, and test teams creating ‘Change Requests’.<br />
 As developers create and testers test the software they can log any change they think may be beneficial. <br />
 <br />
 Managers can then asses these later and either accept for the current version, add as a good idea for a later version or decline them.<br />
@@ -69,9 +69,13 @@ Git can be linked up nicely with all these items to make clear what work is bein
 Right now on the item and when an item is completed where the work was done.<br />
 
 </asp:Panel>
-    <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
     <!-- use button tag for on page actions -->
     <br />
     <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
 </asp:Content>
