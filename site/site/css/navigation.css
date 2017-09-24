@@ -8,6 +8,18 @@
     margin: 40px;
 }
 
+/*To fix an issue where scrollbars push menu items*/
+.top-menu-wrapper {
+    background-color: #0051A5;
+    /* Subtracts width of page (not including scrollbar) from width of entire viewport (including scrollbar)
+        and pushes the menu from the left by that much.
+    */
+    /* I can also place this into .top-menu and not have the wrapper but I decided to keep the wrapper in case 
+        we need it in the future.
+    */
+    padding-left: calc(100vw - 100%);
+}
+
 .top-menu {
     display: flex;
     flex-direction: row;

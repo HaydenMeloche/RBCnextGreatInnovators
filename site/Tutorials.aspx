@@ -1,37 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Tutorials.aspx.cs" Inherits="Tutorials" %>
+<%@ Register Src="~/TopMenu.ascx" TagPrefix="uc1" TagName="TopMenu" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <link href="foundation-icons/foundation-icons.css" rel="stylesheet" />
-    <link href="site/css/navigation.css" rel="stylesheet" />
-
-    <div class="top-menu">
-        <a href="Tutorials.aspx">
-            <div class="menu-item">
-                <i class="fi-book icon-style"></i>
-                Tutorials
-            </div>
-        </a>
-        <a href="CompetitionList.aspx">
-            <div class="menu-item">
-                <i class="fi-pencil icon-style"></i>
-                Competition
-            </div>
-        </a>
-        <a href="<%= (Session["usertype"] != null && Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">
-            <div class="menu-item">
-                <i class="fi-trophy icon-style"></i>
-                Leaderboard
-            </div>
-        </a>
-        <a href="Logout.aspx">
-            <div class="menu-item">
-                <i class="fi-x-circle icon-style"></i>
-                Logout
-            </div>
-        </a>
-    </div>
+    <uc1:TopMenu runat="server" ID="TopMenu" />
 
     <h1 class="welcome-heading">Tutorials</h1>
 
