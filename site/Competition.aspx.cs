@@ -154,7 +154,7 @@ public partial class Competition : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/questions.txt");
+        allQuestions = ParseCompetitionTextFile(@"Competition_Text_Files/Python.txt");
         
 
         try

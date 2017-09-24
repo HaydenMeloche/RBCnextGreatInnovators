@@ -1,0 +1,51 @@
+*
+Your team has been assigned to make a social network. This social network has a class named Person. However the code was written by the janitor last minute. Use your javascript skills to debug this lovely piece of work.
+*
+javascript
+*
+
+function person(nameArg = "unknown", ageArg = 0) {
+    var nameFirst = "error";
+    try {
+        var array = nameArg.split("");
+        this.nameFirst = array[0];
+        this.nameLast = arrays[1];
+    } catch (err) {
+        console.log(err.message);
+    }
+
+    this.age = ageArg;
+    this.returnNameFirst = function () {
+        return this.nameFirst;
+    };
+    this.returnNameLast = function () {
+        return this.nameLast;
+    };
+    this.returnAge = function () {
+        return this.age;
+    };
+}
+var person3 = new person();
+var person = new person("isaac smith", 90);
+var person2 = new person("newton granny", 9);
+console.log(person3.returnNameFirst() + " " + person3.returnAge());
+console.log(person1.returnNameFirst() + " " + person2.returnNameFirst());
+console.log(person2.returnNameLast() + " " + person1.returnNameLast());
+
+*
+One of these things is not like the other
+*
+Expected Output2
+*
+&&&&
+*
+Bad data was inputed into an array. Search the array to find the undefined item in any given array. Then output the index number that it was found in. 
+*
+javascript
+*
+var array = ["hey", "there","all", , "wow"];
+*
+=, == and ___ are all legal operators 
+*
+3
+*
