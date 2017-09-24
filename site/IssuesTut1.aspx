@@ -58,15 +58,21 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Project Tracking - Introduction</h2>
+    
+    
+    <asp:Panel ID="Panel1" runat="server">
+        <div class="modern_margin">
+            <h2>Project Tracking - Introduction</h2>
     <hr />
-    <h4>Introduction</h4>
-    <asp:Panel ID="Panel1" runat="server">1. How can all current bugs in a program be tracked?<br />
+<h4>Introduction</h4>
+1. How can all current bugs in a program be tracked?<br />
 2. Who should be handling a bug when it is found?<br />
 3. How much work is left on a project?<br />
 4. What are the tasks and priority for each developer?<br />
 <br />
 All of these questions can be solved by a good task management software. Some popular ones are VSTS (Visual Studio Team Services) and Jira.
+
+            </div>
 </asp:Panel>
     <!-- use button tag for on page actions -->
     <br />

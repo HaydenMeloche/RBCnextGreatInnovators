@@ -16,6 +16,12 @@
 
     <h1 class="welcome-heading">Tutorials</h1>
 
+    <div class="modern_margin">
+Welcome to the tutorial.<br>
+Quickly learn a language by observing the differences between<br>
+the language you don't know and a language you already know.
+    </div>
+
     <h3 class="sub-heading">Workplace Culture</h3>
     <div class="navi-box">
         <a href="funfacts.aspx">
@@ -49,6 +55,17 @@
             <div class="skill">
                 <img src="site/images/logos/Python - Grey.png" width="64" height="64" /><br />
                 <span>Python</span>
+            </div>
+        </a>
+    </div>
+
+    <h3 class="sub-heading">Project Management</h3>
+    <div class="navi-box">
+        <a href="IssuesTut1.aspx">
+            <div class="skill">
+                <asp:Image Width="64" Height="84" ImageURL="site/images/logos/Bug.png" runat="server" /><br />
+                <br />
+                <span>Project Management</span>
             </div>
         </a>
     </div>

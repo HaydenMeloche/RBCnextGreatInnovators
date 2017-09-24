@@ -58,10 +58,13 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Project Tracking - Questions Anwsered<h2>
+    <div class="modern_margin">
+    <h2>Project Tracking - Questions Anwsered</h2>
     <hr />
     <h4>Questions Anwsered</h4>
-    <asp:Panel ID="Panel1" runat="server">1.Bugs can be logged with all necessary details. This include how reproducible a bug is (once, always, etc), steps to reproduce it, what version of the software it was found in, and many more.<br />
+    <asp:Panel ID="Panel1" runat="server">
+        
+1.Bugs can be logged with all necessary details. This include how reproducible a bug is (once, always, etc), steps to reproduce it, what version of the software it was found in, and many more.<br />
 2.	If the person who found the bug knows the developer who is familiar with the code then it can be assigned that way. 
         Alternatively if a person doesn’t know this information, the bug can be assigned to a manger/lead dev who will then reassign it to the correct person.<br />
 3.	All items within the system whether they are tasks, bugs or anything else can be assigned expected time to completion as well as remaining time. 
@@ -69,7 +72,9 @@
         when they are assigned the item and then keep the remaining time fairly up to date.
         This allows a manager to observe the total remaining time on bugs and tasks within a product.<br />
 4.	Each developer can see all tasks assigned to them, and they can tell the priority by the field. <br />
+
 </asp:Panel>
+        </div>
     <!-- use button tag for on page actions -->
     <br />
     <br />

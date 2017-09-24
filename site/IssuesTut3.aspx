@@ -58,7 +58,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Project Tracking - Misc benifits<h2>
+    <div class="modern_margin">
+    <h2>Project Tracking - Misc benifits</h2>
     <hr />
     <h4>Misc benifits</h4>
     <asp:Panel ID="Panel1" runat="server">This provides a clean way of developers, and test teams creating ‘Change Requests’.<br />
@@ -69,6 +70,7 @@ Git can be linked up nicely with all these items to make clear what work is bein
 Right now on the item and when an item is completed where the work was done.<br />
 
 </asp:Panel>
+        </div>
     <!-- use button tag for on page actions -->
     <br />
     <br />
