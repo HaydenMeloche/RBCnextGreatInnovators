@@ -27,7 +27,7 @@ public partial class gitTutorials_gitTutorial1 : System.Web.UI.Page
         if (readColumn(competition, username) < score)
         {
             SQLiteConnection m_dbConnection;
-            m_dbConnection = new SQLiteConnection(@"Data Source=C:\Users\Hayden\Desktop\RBCnextGreatInnovators\site\database.db;Version=3;");
+            m_dbConnection = new SQLiteConnection(@"Data Source=C:\Users\Jordan\Documents\RBCnextGreatInnovators\site\database.db;Version=3;");
             m_dbConnection.Open();
             string columnName = getColumn(competition);
 
@@ -46,7 +46,7 @@ public partial class gitTutorials_gitTutorial1 : System.Web.UI.Page
     public int readColumn(Competition competition, string username)
     {
         SQLiteConnection m_dbConnection;
-        m_dbConnection = new SQLiteConnection(@"Data Source=C:\Users\Hayden\Desktop\RBCnextGreatInnovators\site\database.db;Version=3;");
+        m_dbConnection = new SQLiteConnection(@"Data Source=C:\Users\Jordan\Documents\RBCnextGreatInnovators\site\database.db;Version=3;");
         m_dbConnection.Open();
         string columnName = getColumn(competition);
 
