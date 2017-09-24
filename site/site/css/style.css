@@ -18,25 +18,42 @@ input {
     margin-bottom: 10px;
     padding: 12px 10px;
     width: 340px;
-    border: 3px solid #E6E8EB;
+}
+
+input[type='submit'] {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#63b6db+0,309dcf+100;Blue+3D+%234 */
+    background: rgb(99,182,219); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(99,182,219,1) 0%, rgba(48,157,207,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(99,182,219,1) 0%,rgba(48,157,207,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 ); /* IE6-9 */
+    border: none;
 }
 
 input:focus {
-    border: 3px solid #51B5E0;
+    border: 1px solid #51B5E0;
 }
 
 .header-bar {
-    background-color: #0051A5;
-    margin-left: 4px;
+    background-color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
 }
 
 .header-bar img {
+    position: absolute;
+    bottom: 0;
     float: left;
+    margin: 20px;
 }
 
 .header-bar h1 {
-    position: relative;
-    color: white;
+    position: absolute;
+    color: #6F6E6F;
+    font-size: 20px;
+    bottom: 0;
+    left: 80px;
 }
 
 .logo-img {
@@ -44,12 +61,74 @@ input:focus {
 }
 
 .site-box {
+    padding: 40px 40px;
+}
+
+.site-box.introduction {
     background-color: #FEDF01;
-    padding: 20px 40px;
+}
+
+.site-box.hero {
+    background: url("backgrounds/Hero1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top 0 right 100%;
+    height: 512px;
+}
+
+.site-box.skills {
+    background-color: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.site-box.skills .skill {
+    margin: 40px;
+}
+
+.skills-box, .action-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-box .skill img {
+    width: 128px;
+    height: 128px;
+}
+
+.skills-box .skill span {
+    text-align: center;
+}
+
+.site-box.compete {
+    background-color: #FEDF01;
+    padding-top: 256px;
+    padding-bottom: 256px;
+}
+
+.site-box.onboard {
+    background-color: #FFFFFF;
+    padding-top: 256px;
+    padding-bottom: 256px;
+}
+
+.site-box.call-to-action {
+    background-color: #FEDF01;
+    padding-top: 256px;
+    padding-bottom: 256px;
+}
+
+.site-box.villain {
+    background: url("backgrounds/Hero2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 256px;
 }
 
 .welcome-heading {
-    margin-left: 4px;
+    margin: 20px;
 }
 
 .box-link, .header-link {
@@ -58,22 +137,26 @@ input:focus {
 }
 
 .box-link {
-    display: inline-block;
-    width: 0;
-    height: 0;
+    display: block;
 }
 
 .link-box {
+    display: block;
     margin: 20px;
     padding: 20px;
     width: 100px;
     text-align: center;
     border: 1px solid #002750;
     background-color: #006AC3;
-    display: inline-block;
 }
 
 /*Just get 'er done*/
 .user-field {
     text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+    .site-box.skills .skill {
+        margin: 10px;
+    }
 }
