@@ -1,0 +1,24 @@
+﻿.welcome-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0051A5;
+}
+
+.welcome-menu .menu-item {
+    padding: 100px;
+    color: white;
+    font-size: 60px;
+    transition: box-shadow 1s;
+}
+
+.welcome-menu .menu-item:hover {
+    box-shadow: inset 10px 5px 5px #B5A80C, inset -10px 5px 5px #B5A80C, inset 10px -5px 5px #B5A80C, inset 15px 10px 10px #E8CF00, inset -15px 10px 10px #E8CF00, inset 15px -10px 10px #E8CF00;
+}
+
+.icon-style {
+    font-size: 95px;
+    color: #FEDF01;
+    text-shadow: 0px 1px 2px #B5A80C;
+}
