@@ -34,9 +34,9 @@
                 <span>JavaScript</span>
             </div>
         </a>
-        <a href="Python.aspx">
+        <a href="">
             <div class="skill">
-                <img src="site/images/logos/Python.png" width="64" height="64" /><br />
+                <img src="site/images/logos/Python - Grey.png" width="64" height="64" /><br />
                 <span>Python</span>
             </div>
         </a>
