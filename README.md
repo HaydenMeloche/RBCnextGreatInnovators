@@ -2,27 +2,27 @@
 
 Hayden  
 
-- [ ] Complete compiler for python and javascript  
-- [ ] Leaderboard page for managers  
-- [ ] Leaderboard page for Students  
-- [ ] Function to add score to leaderboard (Just keep the highest score)  
-- [ ] Function to update progress in tutorial
+- [X] Complete compiler for python and javascript  
+- [X] Leaderboard page for managers  
+- [X] Leaderboard page for Students  
+- [X] Function to add score to leaderboard (Just keep the highest score)  
+- [X] Function to update progress in tutorial
 
 Jordan  
-- [ ] Finish content for Git tutorial  
-- [ ] Format content into seperate pages  
-- [ ] Issue logging tutorial  
-- [ ] Help with competition  
+- [X] Finish content for Git tutorial  
+- [X] Format content into seperate pages  
+- [X] Issue logging tutorial  
+- [X] Help with competition  
 - [ ] Content on main page  
 
 James  
-- [ ] CSS and styling for front page  
-- [ ] CSS and styling for tutorials  
+- [X] CSS and styling for front page  
+- [X] CSS and styling for tutorials  
 - [ ] CSS and sytling for competition  
 
 Dan  
-- [ ] Git competition  
-- [ ] Simple javascript or python coding questions  
-- [ ] Algorithm competition  
+- [X] Git competition  
+- [X] Simple javascript or python coding questions  
+- [X] Algorithm competition  
 
 https://foundation.zurb.com/building-blocks/
