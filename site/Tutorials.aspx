@@ -3,16 +3,35 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <link href="foundation-icons/foundation-icons.css" rel="stylesheet" />
     <link href="site/css/navigation.css" rel="stylesheet" />
 
-    <nav class="hover-underline-menu" data-menu-underline-from-center="">
-      <ul class="menu align-center">
-        <li><a href="Tutorials.aspx">Tutorials</a></li>
-        <li><a href="CompetitionList.aspx">Competition</a></li>
-        <li><a href="<%= (Session["usertype"] != null && Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">Leaderboard</a></li>
-        <li><a href="Logout.aspx">Logout</a></li>
-      </ul>
-    </nav>
+    <div class="top-menu">
+        <a href="Tutorials.aspx">
+            <div class="menu-item">
+                <i class="fi-book icon-style"></i>
+                Tutorials
+            </div>
+        </a>
+        <a href="CompetitionList.aspx">
+            <div class="menu-item">
+                <i class="fi-pencil icon-style"></i>
+                Competition
+            </div>
+        </a>
+        <a href="<%= (Session["usertype"] != null && Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">
+            <div class="menu-item">
+                <i class="fi-trophy icon-style"></i>
+                Leaderboard
+            </div>
+        </a>
+        <a href="Logout.aspx">
+            <div class="menu-item">
+                <i class="fi-x-circle icon-style"></i>
+                Logout
+            </div>
+        </a>
+    </div>
 
     <h1 class="welcome-heading">Tutorials</h1>
 

@@ -7,3 +7,30 @@
 .navi-box a .skill {
     margin: 40px;
 }
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0051A5;
+    text-align: center;
+}
+
+.top-menu .menu-item {
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    transition: box-shadow 1s;
+    width: 200px;
+}
+
+.top-menu .menu-item:hover {
+    box-shadow: inset 10px 5px 5px #B5A80C, inset -10px 5px 5px #B5A80C, inset 10px -5px 5px #B5A80C, inset 15px 10px 10px #E8CF00, inset -15px 10px 10px #E8CF00, inset 15px -10px 10px #E8CF00;
+}
+
+.icon-style {
+    font-size: 40px;
+    color: #FEDF01;
+    text-shadow: 0px 1px 2px #B5A80C;
+}
