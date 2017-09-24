@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <link href="site/css/navigation.css" rel="stylesheet" />
+
     <nav class="hover-underline-menu" data-menu-underline-from-center="">
       <ul class="menu align-center">
         <li><a href="Tutorials.aspx">Tutorials</a></li>
