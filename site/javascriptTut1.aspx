@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="gitTutorial1.aspx.cs" Inherits="gitTutorials_gitTutorial1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="javascriptTut1.aspx.cs" Inherits="javascriptTut1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
@@ -55,20 +55,37 @@
               transform: translateX(0%);
       opacity: 0.25;
     }
-
+    pre code {
+      background-color: #eee;
+      border: 2px solid #999;
+      display: block;
+      padding: 20px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="modern_margin">
-        <h2>Git Tutorial - Commits</h2>
+        <h2>Learn Javascript - Style</h2>
         <hr />
-        <h4>Commits</h4>
-        <asp:Panel ID="Panel1" runat="server">Git at its highest level is just a way of keeping track of changes to code. <br />
-    Every change consisting of one or more files is called a commit.</asp:Panel>
-        <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
+ 
+        <asp:Panel ID="Panel1" runat="server"><h4>Style of execution:</h4>
+    Both languages are interpretted at run time and behave almost the same
+            <br />
+     <h4>Difference in scope</h4> 
+    Python: The Scope is restricted between elements of the same spacing
+    ex. </asp:Panel>
+
+        <pre>
+      <code>
+        JavaScript: The scope in JavaScript is restricted between '{' and '}'.
+        ex.
+        if(conditional){
+	        //this is in the scope of the if statement
+        }
+        //this is not in the scope of the if statement
+      </code>
+    </pre>
         <!-- use button tag for on page actions -->
-        <br />
-        <br />
         <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
         <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
             <div class="link-box">
@@ -77,4 +94,3 @@
         </a>
     </div>
 </asp:Content>
-

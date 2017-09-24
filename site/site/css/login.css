@@ -14,9 +14,9 @@ body {
     height: 100%;
 }
 
-label, .login-header, .input-box {
-    margin-left: 20px;
-    margin-right: 20px;
+label, .login-header, .input-box, input[type='submit'] {
+    margin-left: 256px;
+    margin-right: 256px;
 }
 
 .input-box input {
@@ -24,7 +24,6 @@ label, .login-header, .input-box {
 }
 
 input[type='submit'] {
-    margin-left: 20px;
     box-sizing: border-box;
 }
 
@@ -93,4 +92,11 @@ input[type='submit'] {
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    label, .login-header, .input-box, input[type='submit'] {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }

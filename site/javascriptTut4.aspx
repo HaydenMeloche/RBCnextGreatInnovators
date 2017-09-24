@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="gitTutorial1.aspx.cs" Inherits="gitTutorials_gitTutorial1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="javascriptTut4.aspx.cs" Inherits="javascriptTut4" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
@@ -56,16 +56,53 @@
       opacity: 0.25;
     }
 
+    pre code {
+        background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        padding: 20px;
+    }   
+
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="modern_margin">
-        <h2>Git Tutorial - Commits</h2>
+        <h2>Learn Javascript - Functions</h2>
         <hr />
-        <h4>Commits</h4>
-        <asp:Panel ID="Panel1" runat="server">Git at its highest level is just a way of keeping track of changes to code. <br />
-    Every change consisting of one or more files is called a commit.</asp:Panel>
-        <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
+        <asp:Panel ID="Panel1" runat="server">
+            <h4>Python</h4> Functions in Python are declared like so.
+        ex.
+                <pre>
+                    <code>
+                        def functionName(functionArg):
+	                        return "hello " + functionArg
+                    </code>
+                </pre>
+            <h4>JavaScript</h4>
+         While functions in JavaScript are declared like this.
+        ex.
+            <pre>
+                <code>
+                    function (functionArg) {
+                        return "hello " + functionArg ;
+                    };
+                </code>
+            </pre>
+        <h3>Main function</h3>
+         <h4>Python</h4>   
+            Includes the main to indicate which function to run first.
+        ex. 
+            <pre>
+                <code>
+                 def main():
+	                #code goes here
+
+                 if __name__ == '__main__':
+	                    main()
+                </code>
+            </pre>
+            <h4>JavaScript</h4>
+            Javascript does not have a main function and runs starting from first level of scope.</asp:Panel>
         <!-- use button tag for on page actions -->
         <br />
         <br />
@@ -77,4 +114,3 @@
         </a>
     </div>
 </asp:Content>
-

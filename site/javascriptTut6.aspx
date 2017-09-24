@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="gitTutorial1.aspx.cs" Inherits="gitTutorials_gitTutorial1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="javascriptTut6.aspx.cs" Inherits="javaTut6" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
@@ -55,20 +55,71 @@
               transform: translateX(0%);
       opacity: 0.25;
     }
-
+    pre code {
+      background-color: #eee;
+      border: 2px solid #999;
+      display: block;
+      padding: 20px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="modern_margin">
-        <h2>Git Tutorial - Commits</h2>
+        <h2>Learn Javascript - Data Types & Classes</h2>
         <hr />
-        <h4>Commits</h4>
-        <asp:Panel ID="Panel1" runat="server">Git at its highest level is just a way of keeping track of changes to code. <br />
-    Every change consisting of one or more files is called a commit.</asp:Panel>
-        <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
+        <h3>Variables</h3>
+        <h4>Python</h4>
+        Both javaScript and Python have dynamically typed variables with one minor difference.
+        ex.
+        <pre>
+            <code>
+                variableName = "value"
+            </code>
+        </pre>
+        <h4>JavaScript</h4>
+        Javascript differs from python in that you have to declare it as a variable.
+        ex.
+        <pre>
+            <code>
+                var variableName = "value";
+            </code>
+        </pre>
+        <h3>Classes</h3>
+        <h4>Python</h4>
+        ex.
+        <pre>
+            <code>
+                class className(object):
+	                """docstring for className"""
+	                def __init__(self, arg):
+		                super(className, self).__init__()
+		                self.arg = arg
+		
+	                def functionName(self, functionArg):
+		                return self.arg + functionArg
+
+    variable = ClassName("hello ")
+    variable.functionName("world")
+            </code>
+        </pre>
+ 
+        <h4>JavaScript</h4>
+        ex.
+        <pre>
+            <code>
+                function ClassName(arg = "unknown unknown") {
+                    var this.variableName = arg;
+                    this.functionName = function (functionArg) {
+                         return this.variableName + functionArg ;
+                    };
+                }
+
+    var variable = new ClassName("hello");
+    variable.functionName(" world");
+            </code>
+        </pre>
+
         <!-- use button tag for on page actions -->
-        <br />
-        <br />
         <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
         <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
             <div class="link-box">
@@ -77,4 +128,3 @@
         </a>
     </div>
 </asp:Content>
-

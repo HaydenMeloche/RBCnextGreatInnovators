@@ -1,0 +1,9 @@
+﻿.navi-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.navi-box a .skill {
+    margin: 40px;
+}

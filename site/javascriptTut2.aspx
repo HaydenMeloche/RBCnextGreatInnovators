@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="gitTutorial1.aspx.cs" Inherits="gitTutorials_gitTutorial1" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="javascriptTut2.aspx.cs" Inherits="javascriptTut2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
             .button-rounded-hover {
@@ -55,20 +54,35 @@
               transform: translateX(0%);
       opacity: 0.25;
     }
-
+    pre code {
+      background-color: #eee;
+      border: 1px solid #999;
+      display: block;
+      padding: 5px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="modern_margin">
-        <h2>Git Tutorial - Commits</h2>
+        <h2>Learn Javascript - Statements</h2>
         <hr />
-        <h4>Commits</h4>
-        <asp:Panel ID="Panel1" runat="server">Git at its highest level is just a way of keeping track of changes to code. <br />
-    Every change consisting of one or more files is called a commit.</asp:Panel>
-        <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
+        <asp:Panel ID="Panel1" runat="server">
+    <h4>Python:</h4> Statements in Python are generally finished with a new line. <br />
+    ex.
+            <pre>
+                <code>
+                    x = y + 1
+                </code>
+            </pre>
+    <h4>JavaScript:</h4> The statement is finished with a single ';'. <br />
+    ex.
+            <pre>
+                <code>
+                    x = y + 1;
+                </code>
+            </pre>
+        </asp:Panel>
         <!-- use button tag for on page actions -->
-        <br />
-        <br />
         <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
         <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
             <div class="link-box">
@@ -77,4 +91,3 @@
         </a>
     </div>
 </asp:Content>
-
