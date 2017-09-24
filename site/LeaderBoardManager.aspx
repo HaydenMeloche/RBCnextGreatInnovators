@@ -8,19 +8,18 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-        <asp:SqlDataSource runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' ProviderName='<%$ ConnectionStrings:ConnectionString.ProviderName %>' SelectCommand="select * from Users"></asp:SqlDataSource>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AllowSorting="True" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="True" DataSourceID="SqlDataSource1" AllowSorting="True" CellPadding="4" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White"></AlternatingRowStyle>
         <Columns>
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name"></asp:BoundField>
             <asp:BoundField DataField="E-mail" HeaderText="E-mail" SortExpression="E-mail"></asp:BoundField>
             <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="Username"></asp:BoundField>
-            <asp:BoundField DataField="GitComp" HeaderText="GitComp" SortExpression="GitComp"></asp:BoundField>
-            <asp:BoundField DataField="QuickCodeComp" HeaderText="QuickCodeComp" SortExpression="QuickCodeComp"></asp:BoundField>
-            <asp:BoundField DataField="AlgoComp" HeaderText="AlgoComp" SortExpression="AlgoComp"></asp:BoundField>
-            <asp:BoundField DataField="GitProgress" HeaderText="GitProgress" SortExpression="GitProgress"></asp:BoundField>
-            <asp:BoundField DataField="IssuesProgress" HeaderText="IssuesProgress" SortExpression="IssuesProgress"></asp:BoundField>
-            <asp:BoundField DataField="TotalScore" HeaderText="TotalScore" SortExpression="TotalScore"></asp:BoundField>
+            <asp:BoundField DataField="GitComp" HeaderText="Git Competition" SortExpression="GitComp"></asp:BoundField>
+            <asp:BoundField DataField="Python" HeaderText="Python" SortExpression="QuickCodeComp"></asp:BoundField>
+            <asp:BoundField DataField="Javascript" HeaderText="Javascript" SortExpression="AlgoComp"></asp:BoundField>
+            <asp:BoundField DataField="GitProgress" HeaderText="Git Progress" SortExpression="GitProgress"></asp:BoundField>
+            <asp:BoundField DataField="IssuesProgress" HeaderText="Issues Progress" SortExpression="IssuesProgress"></asp:BoundField>
+            <asp:BoundField DataField="TotalScore" HeaderText="Total Score" SortExpression="TotalScore"></asp:BoundField>
         </Columns>
         <EditRowStyle BackColor="#2461BF"></EditRowStyle>
 

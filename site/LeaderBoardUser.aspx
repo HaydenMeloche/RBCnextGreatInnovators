@@ -35,7 +35,7 @@
         <SortedDescendingHeaderStyle BackColor="#4870BE"></SortedDescendingHeaderStyle>
     </asp:GridView>
 
-    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString2 %>' ProviderName='<%$ ConnectionStrings:ConnectionString2.ProviderName %>' SelectCommand="select Username, TotalScore from Users
-order by TotalScore desc;"></asp:SqlDataSource>
+    <asp:sqldatasource runat="server" id="SqlDataSource1" connectionstring='<%$ ConnectionStrings:ConnectionString2 %>' providername='<%$ ConnectionStrings:ConnectionString2.ProviderName %>' selectcommand="select Username, TotalScore from Users
+order by TotalScore desc;"></asp:sqldatasource>
 </asp:Content>
 
