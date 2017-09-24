@@ -69,7 +69,7 @@
     <nav class="hover-underline-menu" data-menu-underline-from-center="">
       <ul class="menu align-center">
         <li><a href="Tutorials.aspx">Tutorials</a></li>
-        <li><a href="Competition.aspx">Competition</a></li>
+        <li><a href="CompetitionList.aspx">Competition</a></li>
         <li><a href="<%= (Session["usertype"].Equals("manager") ? "LeaderBoardManager.aspx" : "LeaderBoardUser.aspx") %>">Leaderboard</a></li>
         <li><a href="Logout.aspx">Logout</a></li>
       </ul>

@@ -234,12 +234,16 @@ public partial class Competition : System.Web.UI.Page
                 Session["QuestionInProgress"] = true;
                 writeOverUserInput = true;
                 LoadCurQuestion();
+                Checked.Visible = true;
+                Wrong.Visible = false;
             }
             
         }
         else//user was wrong
         {
             Output.Text = "Incorrect anwser";
+            Checked.Visible = false;
+            Wrong.Visible = true;
         }
     }
 
