@@ -7,3 +7,42 @@
 .navi-box a .skill {
     margin: 40px;
 }
+
+/*To fix an issue where scrollbars push menu items*/
+.top-menu-wrapper {
+    background-color: #0051A5;
+    /* Subtracts width of page (not including scrollbar) from width of entire viewport (including scrollbar)
+        and pushes the menu from the left by that much.
+    */
+    /* I can also place this into .top-menu and not have the wrapper but I decided to keep the wrapper in case 
+        we need it in the future.
+    */
+    padding-left: calc(100vw - 100%);
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0051A5;
+    text-align: center;
+}
+
+.top-menu .menu-item {
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    transition: box-shadow 1s;
+    width: 200px;
+}
+
+.top-menu .menu-item:hover {
+    box-shadow: inset 10px 5px 5px #B5A80C, inset -10px 5px 5px #B5A80C, inset 10px -5px 5px #B5A80C, inset 15px 10px 10px #E8CF00, inset -15px 10px 10px #E8CF00, inset 15px -10px 10px #E8CF00;
+}
+
+.icon-style {
+    font-size: 40px;
+    color: #FEDF01;
+    text-shadow: 0px 1px 2px #B5A80C;
+}

@@ -1,4 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="IssuesTut1.aspx.cs" Inherits="IssuesTut1" %>
+
+<%@ Register Src="~/TopMenu.ascx" TagPrefix="uc1" TagName="TopMenu" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
             .button-rounded-hover {
@@ -58,20 +61,28 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>Project Tracking - Introduction</h2>
-    <hr />
-    <h4>Introduction</h4>
-    <asp:Panel ID="Panel1" runat="server">1. How can all current bugs in a program be tracked?<br />
-2. Who should be handling a bug when it is found?<br />
-3. How much work is left on a project?<br />
-4. What are the tasks and priority for each developer?<br />
-<br />
-All of these questions can be solved by a good task management software. Some popular ones are VSTS (Visual Studio Team Services) and Jira.
-</asp:Panel>
-    <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
-    <!-- use button tag for on page actions -->
+    <uc1:TopMenu runat="server" ID="TopMenu" />
+    <div class="modern_margin">
+        <h2>Project Tracking - Introduction</h2>
+        <hr />
+        <h4>Introduction</h4>
+        <asp:Panel ID="Panel1" runat="server">1. How can all current bugs in a program be tracked?<br />
+    2. Who should be handling a bug when it is found?<br />
+    3. How much work is left on a project?<br />
+    4. What are the tasks and priority for each developer?<br />
     <br />
-    <br />
-    <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Width="50" Height="10" Text="Next" />
+    All of these questions can be solved by a good task management software. Some popular ones are VSTS (Visual Studio Team Services) and Jira.
+    </asp:Panel>
+        <asp:Image ID="Image1" runat="server" ImageUrl="https://3.bp.blogspot.com/-JOstLszmx1Y/VqnTd7vfUjI/AAAAAAAArJ0/r24DWMC_pUo/s1600/git-staging-diagram.png" Height="250" />
+        <!-- use button tag for on page actions -->
+        <br />
+        <br />
+        <asp:Button ID="Button1" class="button button-rounded-hover" OnClick="Button1_Click" runat="server" Style="display:none;" />
+        <a href="#" onclick="document.getElementById('<%= Button1.ClientID %>').click()" class="box-link">
+            <div class="link-box">
+                <b>Next</b>
+            </div>
+        </a>
+    </div>
 </asp:Content>
 
