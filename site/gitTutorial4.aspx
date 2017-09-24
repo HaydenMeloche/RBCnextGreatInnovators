@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="gitTutorial4.aspx.cs" Inherits="gitTutorials_gitTutorial1" %>
 
+<%@ Register Src="~/TopMenu.ascx" TagPrefix="uc1" TagName="TopMenu" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style>
             .button-rounded-hover {
@@ -59,6 +62,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <uc1:TopMenu runat="server" ID="TopMenu" />
     <div class="modern_margin">
         <h2>Git Tutorial - Workflow</h2>
         <hr />
