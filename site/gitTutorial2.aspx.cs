@@ -15,7 +15,7 @@ public partial class gitTutorials_gitTutorial1 : System.Web.UI.Page
     protected void Button4_Click(object sender, EventArgs e)
     {
         //string username = Session["username"].ToString();
-        string username = "bestMad";
+        string username = "bobTheBoy";
         UpdateScore(2, username, Competition.gitProgress);
         Response.Redirect("~/gitTutorial3.aspx");
     }

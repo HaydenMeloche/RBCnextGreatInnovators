@@ -6,19 +6,16 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class gitTutorials_gitTutorial1 : System.Web.UI.Page
+public partial class IssuesTut3 : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
-    {
-
-    }
-    protected void Button2_Click(object sender, EventArgs e)
+    protected void Button1_Click(object sender, EventArgs e)
     {
         //string username = Session["username"].ToString();
         string username = "bobTheBoy";
-        UpdateScore(4, username, Competition.gitProgress);
+        UpdateScore(2, username, Competition.gitProgress);
         Response.Redirect("~/Tutorials.aspx");
     }
+
     public enum Competition { gitComp, quickCode, algorithm, totalScore, gitProgress, issuesProgress };
 
     public void UpdateScore(int score, string username, Competition competition)
