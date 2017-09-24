@@ -5,12 +5,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
         <link href="site/css/login.css" rel="stylesheet" />
-        <h2>Login</h2>
+        <h2 class="login-header">Login</h2>
         <asp:Label ID="lblNotifier" runat="server" CssClass="notifier-label"></asp:Label><br />
         <label for="<%= txtUsername.ClientID %>">Username:</label><br />
-        <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
-        <div class="password-wrapper">
-            <label for="<%= txtPassword.ClientID %>">Password:</label><br />
+        <div class="input-box">
+            <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+        </div>
+        <label for="<%= txtPassword.ClientID %>">Password:</label><br />
+        <div class="input-box password-wrapper">
             <asp:TextBox ID="txtPassword" runat="server" cssClass="password" type="password" Visible="True"></asp:TextBox>
             <button class="unmask" type="button" title="Mask/Unmask Password">Unmask</button>
         </div>

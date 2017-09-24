@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Co-op Crash Course Sponsored by RBC</title>
     <script src="Scripts/jquery-3.2.1.js"></script>
+    <link href="dist/css/foundation.css" rel="stylesheet" />
     <script src="dist/js/foundation.js"></script>
     <link href="site/css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
